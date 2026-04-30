@@ -248,7 +248,7 @@ main {
 /* hero */
 
 .hero {
-  background-image: url(./assets/images/hero-img.jpg);
+  background-image: url(./assets/hero-img.jpg);
   position: relative;
   border: var(--glass-border);
   margin-top: var(--nav-height);
@@ -440,13 +440,13 @@ main {
 }
 
 .promise-1 {
-  background-image: url(./assets/images/promise-1-img.jpg);
+  background-image: url(./assets/promise-1-img.jpg);
 }
 .promise-2 {
-  background-image: url(./assets/images/promise-2-img.jpg);
+  background-image: url(./assets/promise-2-img.jpg);
 }
 .promise-3 {
-  background-image: url(./assets/images/promise-3-img.jpg);
+  background-image: url(./assets/promise-3-img.jpg);
 }
 
 /* banner */
