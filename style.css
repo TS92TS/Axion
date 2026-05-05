@@ -312,7 +312,7 @@ main {
 }
 
 .nav-cta::before {
-  content: "\260E";
+  content: "\260E\FE0E";
   margin-right: var(--space-2);
 }
 
@@ -1031,6 +1031,10 @@ main {
     font-size: var(--font-size-2xl);
   }
 
+   .hero {
+      margin-top: 8rem;
+   }
+
   .hero-heading {
     font-size: var(--font-size-3xl);
   }
@@ -1094,6 +1098,10 @@ main {
     gap: var(--space-10);
   }
 
+   .about-hero {
+      margin-top: 8rem;
+   }
+   
   .about-hero-content {
     padding: 0 var(--space-6);
   }
