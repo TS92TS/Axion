@@ -1501,7 +1501,7 @@ main {
 
   .car-hero {
     margin-top: 8rem;
-    background-image: url("./assets/images/2025-revuelto-phone.jpeg");
+    background-image: url(./assets/images/2025-revuelto-phone.jpeg);
   }
 
   .gallery-grid {
