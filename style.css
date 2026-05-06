@@ -1500,8 +1500,10 @@ main {
   }
 
   .car-hero {
-    margin-top: 8rem;
-    background-image: url(./assets/images/2025-revuelto-phone.jpeg);
+    margin-top: 8.5rem;
+    background-image: 
+      linear-gradient(to top, var(--color-bg-base) 0%, transparent 60%),
+      url(./assets/images/2025-revuelto-phone.jpeg); 
   }
 
   .gallery-grid {
