@@ -1000,6 +1000,7 @@ main {
    ============================================ */
 .car-gallery {
   padding: var(--space-12) 0;
+  z-index: var(--z-raised);
 }
 
 .gallery-grid {
