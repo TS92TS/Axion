@@ -1848,6 +1848,9 @@ main {
     gap: var(--space-8);
   }
 
+   .inventory-header {
+      margin-top: 8.5rem;
+   }
   /* Inventory controls — stack zones, full-width sort */
   .controls-bar {
     flex-direction: column;
