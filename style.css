@@ -2030,7 +2030,7 @@ main {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1400px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .about-hero-heading {
     max-width: 85%;
   }
@@ -2040,14 +2040,15 @@ main {
     gap: var(--space-6);
   }
 
-  .promise-card-content {
-    order: -1; } /* pull text above image */
-  .promise-card-media { 
-    order:  0; } /* image sits below     */
+  .promise-card-content { 
+    order: -1; }
+  .promise-card-media   { 
+    order:  0; min-width: 0; }
+
   .promise-card-media {
     aspect-ratio: 16 / 9;
-    max-height: 420px;
-  }
+    max-height: 380px;      /* THIS is the primary fix — caps container height */
+    width: 100%;            /* ensures it fills column without overflowing */
 
   .why-list {
     gap: var(--space-6);
