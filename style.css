@@ -1503,19 +1503,6 @@ main {
   object-fit: cover;
   object-position: center;
 }
-
-.promise-card:nth-child(1) .promise-card-media img {
-  object-position: 60% center;
-}
-.promise-card:nth-child(2) .promise-card-media img {
-  object-position: center;
-  aspect-ratio: 21 / 9;
-}
-.promise-card:nth-child(3) .promise-card-media img {
-  object-position: 40% center;
-  aspect-ratio: 16 / 10;
-}
-
 /* ============================================
    ABOUT — WHY AXION
    ============================================ */
@@ -2040,15 +2027,17 @@ main {
     gap: var(--space-6);
   }
 
-  .promise-card-content { 
-    order: -1; }
-  .promise-card-media   { 
-    order:  0; min-width: 0; }
+  .promise-card-content {
+    order: -1;
+  }
 
   .promise-card-media {
+    order: 0;
+    min-width: 0;
     aspect-ratio: 16 / 9;
-    max-height: 380px;      /* THIS is the primary fix — caps container height */
-    width: 100%;            /* ensures it fills column without overflowing */
+    width: 100%;
+    max-height: 380px;
+  }
 
   .why-list {
     gap: var(--space-6);
