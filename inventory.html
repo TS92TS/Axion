@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse the Axion Auto collection — a curated selection of the world's finest supercars and luxury SUVs."
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <title>Inventory — Axion Auto</title>
+  </head>
+  <body>
+    <header class="site-nav">
+      <span class="site-header">AXION</span>
+      <nav class="nav-header" id="nav-menu" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./inventory.html">Browse</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+441234567890" class="btn btn--primary nav-cta">Call Us</a>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="inventory-header">
+        <div class="section-inner">
+          <h1 class="section-heading">Current Collection</h1>
+          <p class="car-description__text">
+            Explore our current collection of world-class machinery. Each
+            vehicle in the Axion collection undergoes a rigorous multi-point
+            inspection and is prepared to the highest aesthetic standards.
+          </p>
+        </div>
+      </section>
+
+      <section class="inventory-controls" aria-label="Filter and sort controls">
+        <div class="section-inner">
+          <div class="controls-bar">
+            <div class="controls-filters">
+              <div class="filter-group">
+                <span class="filter-group-label" id="label-make">Make</span>
+                <div
+                  class="filter-options"
+                  id="filter-make"
+                  role="radiogroup"
+                  aria-labelledby="label-make"
+                ></div>
+              </div>
+              <div class="filter-group">
+                <span class="filter-group-label" id="label-fuel"
+                  >Fuel Type</span
+                >
+                <div
+                  class="filter-options"
+                  id="filter-fuel"
+                  role="radiogroup"
+                  aria-labelledby="label-fuel"
+                ></div>
+              </div>
+            </div>
+
+            <div class="controls-meta">
+              <p class="result-count">
+                <span id="result-count-text">— vehicles</span>
+                <button
+                  class="clear-filters"
+                  id="clear-filters"
+                  type="button"
+                  hidden
+                >
+                  Clear filters
+                </button>
+              </p>
+
+              <div class="sort-wrapper">
+                <label for="sort-select" class="sort-label">Sort by</label>
+                <div class="sort-select-shell">
+                  <select id="sort-select" class="sort-select">
+                    <option value="featured">Featured</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="year-desc">Newest First</option>
+                    <option value="mileage-asc">Lowest Mileage</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-cars-section">
+        <div class="section-inner">
+          <div class="featured-cars" id="inventory-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner">
+        <div class="footer-layout">
+          <div class="footer-column">
+            <h2 class="footer-heading">Axion Auto</h2>
+            <nav class="axion-footer" aria-label="Footer navigation">
+              <ul class="footer-list">
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./careers.html">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Opening Hours</h2>
+            <div class="hours">
+              <dl class="hours-grid">
+                <div class="hour-row">
+                  <dt>Mon – Fri</dt>
+                  <dd>09:00 – 17:30</dd>
+                </div>
+                <div class="hour-row">
+                  <dt>Saturday</dt>
+                  <dd>09:00 – 17:00</dd>
+                </div>
+                <div class="hour-row">
+                  <dt>Sunday</dt>
+                  <dd>Closed</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2026 Axion Auto UK</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./cars.js" defer></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
