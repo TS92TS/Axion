@@ -1588,11 +1588,11 @@ main {
 }
 
 .founder-quote-text {
-  padding: var(--space-8) 0 var(--space-8) var(--space-8);
+  position: relative;
+  padding: var(--space-10) var(--space-8);
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
-  position: relative;
   border-left: 2px solid var(--color-accent-primary);
 }
 
@@ -1605,20 +1605,29 @@ main {
   max-width: 65ch;
 }
 
-.founder-quote-text p:first-child::before {
-  content: "\201C";
+/* Decorative quotation marks — anchored to the blockquote corners,
+   not the paragraphs. Scale smoothly via clamp() across all viewports. */
+.founder-quote-text::before,
+.founder-quote-text::after {
   position: absolute;
-  font-size: var(--font-size-5xl);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
   color: var(--color-accent-primary);
-  top: 0;
-  left: 0;
+  pointer-events: none;
 }
 
-.founder-quote-text p:last-child::after {
+.founder-quote-text::before {
+  content: "\201C";
+  top: var(--space-2);
+  left: var(--space-4);
+}
+
+.founder-quote-text::after {
   content: "\201D";
-  font-size: var(--font-size-5xl);
-  color: var(--color-accent-primary);
-  margin-left: var(--space-2);
+  bottom: var(--space-2);
+  right: var(--space-4);
 }
 
 .founder-quote-attribution {
@@ -1805,22 +1814,11 @@ main {
   }
 
   .founder-quote-text {
-    border-left: 2px solid var(--color-accent-primary);
-    padding-left: var(--space-6);
+    padding: var(--space-8) var(--space-6);
   }
 
   .founder-quote-text p {
     font-size: var(--font-size-l);
-  }
-
-  .founder-quote-text p:first-child::before {
-    font-size: var(--font-size-3xl);
-    top: -4px;
-    left: var(--space-2);
-  }
-
-  .founder-quote-text p:last-child::after {
-    font-size: var(--font-size-3xl);
   }
 
   .why-list {
