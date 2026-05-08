@@ -2029,9 +2029,9 @@ main {
 
 .promise-card-media {
     width: 100%;
-    max-width: 580px;
+    max-width: 560px;
     aspect-ratio: 16 / 9;
-    max-height: 380px;
+    max-height: 360px;
 }
 
   .why-list {
