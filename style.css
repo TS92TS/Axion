@@ -2027,12 +2027,7 @@ main {
     gap: var(--space-6);
   }
 
-  .promise-card-content {
-    order: -1;
-  }
-
   .promise-card-media {
-    order: 0;
     min-width: 0;
     aspect-ratio: 16 / 9;
     width: 100%;
