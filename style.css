@@ -1468,6 +1468,7 @@ main {
   flex-direction: column;
   gap: var(--space-5);
   max-width: 65ch;
+  min-width: 0;
 }
 
 .promise-card-heading {
@@ -1493,6 +1494,7 @@ main {
   aspect-ratio: 16 / 9;
   max-height: 320px;
   contain: paint;
+  min-width: 0;
 }
 
 .promise-card-media img {
@@ -2028,7 +2030,7 @@ main {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1400px) {
   .about-hero-heading {
     max-width: 85%;
   }
@@ -2044,7 +2046,7 @@ main {
     order:  0; } /* image sits below     */
   .promise-card-media {
     aspect-ratio: 16 / 9;
-    max-height: none;
+    max-height: 420px;
   }
 
   .why-list {
