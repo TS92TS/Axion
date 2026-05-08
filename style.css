@@ -2038,6 +2038,10 @@ main {
     gap: var(--space-6);
   }
 
+  .promise-card-content {
+    order: -1; } /* pull text above image */
+  .promise-card-media { 
+    order:  0; } /* image sits below     */
   .promise-card-media {
     aspect-ratio: 16 / 9;
     max-height: none;
