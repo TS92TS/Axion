@@ -1589,7 +1589,8 @@ main {
 
 .founder-quote-text {
   position: relative;
-  padding: var(--space-10) var(--space-8);
+  padding: var(--space-16) var(--space-10);
+  max-width: 50rem;
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
@@ -1602,7 +1603,6 @@ main {
   line-height: var(--line-height-relaxed);
   font-style: italic;
   margin: 0;
-  max-width: 65ch;
 }
 
 /* Decorative quotation marks — anchored to the blockquote corners,
@@ -1621,14 +1621,14 @@ main {
 
 .founder-quote-text::before {
   content: "\201C";
-  top: var(--space-2);
-  left: var(--space-4);
+  top: 0;
+  left: var(--space-6);
 }
 
 .founder-quote-text::after {
   content: "\201D";
-  bottom: var(--space-2);
-  right: var(--space-4);
+  bottom: 0;
+  right: var(--space-6);
 }
 
 .founder-quote-attribution {
@@ -1815,7 +1815,7 @@ main {
   }
 
   .founder-quote-text {
-    padding: var(--space-8) var(--space-6);
+    padding: var(--space-12) var(--space-6);
   }
 
   .founder-quote-text p {
