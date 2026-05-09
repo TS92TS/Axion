@@ -1696,6 +1696,10 @@ main {
       url("./assets/images/hero-img-phone.webp");
   }
 
+  .hero-text {
+   min-height: 85svh;
+  }
+
   .hero-heading {
     font-size: var(--font-size-3xl);
   }
