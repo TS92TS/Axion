@@ -1859,6 +1859,17 @@ main {
   .why-list {
     gap: var(--space-8);
   }
+  
+  @keyframes mobile-focus {
+    0%, 20%, 80%, 100% { opacity: 0.92; transform: translateX(0); }
+    45%, 55% { opacity: 1; transform: translateX(var(--space-1)); }
+  }
+
+  .why-item {
+    animation: mobile-focus linear both;
+    animation-timeline: view(); 
+    animation-range: contain 0% contain 100%;
+  }
 
   .car-model {
     font-size: var(--font-size-3xl);
