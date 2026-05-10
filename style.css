@@ -981,11 +981,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
   padding-bottom: var(--space-16);
   background-image:
     linear-gradient(to top, var(--color-bg-base) 0%, transparent 60%),
     url("./assets/images/2025-lamborghini-revuelto.webp");
   background-position: center 70%;
+}
+
+.car-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-bg-overlay-light);
+  z-index: var(--z-base);
 }
 
 .car-hero-content {
