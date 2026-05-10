@@ -1870,7 +1870,7 @@ main {
 
   .why-item.is-focused {
     opacity: 1;
-    transform: translateX(0.5rem);
+    transform: translateX(var(--space-2));
   }
 
   .car-model {
