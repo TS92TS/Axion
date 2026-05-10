@@ -360,19 +360,27 @@ function initializeDetailsPage() {
  Why-item mobile fix
 =======*/
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      entry.target.classList.toggle(
-        'is-focused',
-        entry.intersectionRatio > 0.6
-      );
-    });
-  },
-  {
-    threshold: [0, 0.25, 0.5, 0.75, 1]
-  }
-);
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.why-item');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          'is-focused',
+          entry.isIntersecting
+        );
+      });
+    },
+    {
+      root: null,
+      rootMargin: '-45% 0px -45% 0px',
+      threshold: 0
+    }
+  );
+
+  items.forEach((item) => observer.observe(item));
+});
 
 /* ============================================
    LIGHTBOX
