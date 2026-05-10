@@ -1860,15 +1860,17 @@ main {
     gap: var(--space-8);
   }
   
-  @keyframes mobile-focus {
-    0%, 20%, 80%, 100% { opacity: 0.92; transform: translateX(0); }
-    45%, 55% { opacity: 1; transform: translateX(var(--space-1)); }
+  .why-item {
+    opacity: 0.75;
+    transform: translateX(0);
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s ease;
   }
 
-  .why-item {
-    animation: mobile-focus linear both;
-    animation-timeline: view(); 
-    animation-range: contain 0% contain 100%;
+  .why-item.is-focused {
+    opacity: 1;
+    transform: translateX(0.5rem);
   }
 
   .car-model {
