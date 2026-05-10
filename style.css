@@ -442,6 +442,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
   color: var(--color-text-secondary);
   background: var(--glass-bg);
   border: var(--glass-border);
