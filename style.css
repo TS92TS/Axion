@@ -1767,7 +1767,7 @@ main {
   opacity: 0.92;
   transition:
     opacity var(--transition-base),
-    transform var(--transition-base);
+    transform var(--transition-slow);
 }
 
 .why-item:hover {
