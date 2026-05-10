@@ -317,7 +317,7 @@ function initializeDetailsPage() {
     const useMobile = mobileQuery.matches && car.heroImageMobile;
     const imageToUse = useMobile ? car.heroImageMobile : car.heroImage;
     heroSection.style.backgroundImage = `
-    linear-gradient(to top, var(--color-bg-base) 0%, transparent 80%),
+    linear-gradient(to top, var(--color-bg-base) 0%, transparent 60%),
     url('${imageToUse}')
   `;
   }
